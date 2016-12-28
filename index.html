@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+	<title>¿Dormimos?</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 opaco">
+				<h1 class="text-center title">¿Dormimos?</h1>
+				<p class="text-center">Completa el formulario y luego haz click en analizar para saber si hoy duermes o no.</p>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 opaco">
+				<div class="form-group">
+					<label for="DiadelaSemana">¿Qué día es hoy?</label>
+					<select class="form-control" id="weekday">
+                        <option value="1" >Lunes</option>
+                        <option value="2">Martes</option>
+                        <option value="3">Miércoles</option>
+                        <option value="4">Jueves</option>
+                        <option value="5">Viernes</option>
+                        <option value="6">Sábado</option>
+                        <option value="7">Domingo</option>
+                    </select>
+				</div>
+				<div class="form-group">
+					<label for="CantidadMaxPuntos">¿Estás de vacaciones?</label>
+					<select class="form-control" id="vacation">
+                        <option value="1" >Sí</option>
+                        <option value="2">No</option>
+                    </select>
+				</div>
+                <button onclick="calcular()" class="btn btn-info btn-block" style="color:#fff;font-size:20px;">Analizar</button>
+			</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opaco">
+                <div class="col-md-6">
+                    <h4 class="text-center text-info">Valor:</h4>
+                    <div id="salida" style="font-size:25px; color:#d808c8;" class="text-center">-</div>    
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-center text-info">Resultado:</h4>
+                    <div id="salida2" style="font-size:25px; color:#d808c8;" class="text-center">-</div>
+                    
+                </div>
+			</div>   
+        </div>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>
