@@ -1,0 +1,11 @@
+body {
+    background: url(tribal.jpg);
+    background-size: cover;
+}
+.title {
+    color:#d808c8;
+    font-weight: bold;
+}
+.caja {
+    background: rgba(255,250,240,0.8);
+}
